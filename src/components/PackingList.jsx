@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+/* eslint-disable react/prop-types */
+import  { useState } from 'react'
 import Item from './Item'
 
 // const items = [
@@ -33,7 +34,7 @@ const PackingList = ({items, handelDelete, handelUpdate, handelClearList}) => {
     else if(sort === 'quantity') sortedItems = items.sort((a,b) => a.quantity - b.quantity); //sort by quantity
 
   return (
-    <div className=' w-full h-[60%] bg-[#113261d2] p-2 rounded-lg mt-1'>
+    <div className=' w-full h-[60%] bg-blue-300 p-2 rounded-lg mt-1'>
         <h1 className=' w-full mx-auto text-center text-lg text-white opacity-60'>Add Your Items !</h1>
         <ul className=' flex items-center gap-5 flex-wrap'>
             {sortedItems.map(item => ( //map on sorted so its defalut sorted
