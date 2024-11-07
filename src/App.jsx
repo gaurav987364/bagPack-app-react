@@ -40,7 +40,7 @@ const App = () => {
    if(confirmAlert) setItems([]); //agar true hoga to delete krdena
   }
   return (
-    <div className=" w-full h-screen bg-white p-1">
+    <div className=" w-full h-screen bg-gray-200 p-1">
       {/* <PintrestLayout /> */} 
       {/* <StepIncrease/> */}
       <Header/>
